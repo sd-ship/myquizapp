@@ -34,7 +34,7 @@ const AIGenerator = () => {
                 },
             });
 
-            if (!response.ok) throw new Error(`Quiz not found (Status: ${response.status})`);
+            if (!response.ok) throw new Error(`Quiz not Started Yet`);
 
             const contentType = response.headers.get("content-type");
             if (!contentType || !contentType.includes("application/json")) {
